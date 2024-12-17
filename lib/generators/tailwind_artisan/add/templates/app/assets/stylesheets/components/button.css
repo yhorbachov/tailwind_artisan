@@ -1,0 +1,31 @@
+@layer components {
+    .btn {
+        @apply py-2.5 px-5 focus:outline-none focus:ring-4 rounded-lg  transition-colors cursor-pointer;
+
+        background: var(--button-bg, var(--color-neutral-100));
+        color: var(--button-text);
+
+        &:hover {
+            background-color: color-mix(
+                in oklab,
+                var(--button-bg, var(--color-neutral-100)) 90%,
+                black
+            );
+        }
+    }
+
+    .btn-primary {
+        --button-bg: var(--color-primary);
+        --button-text: var(--color-primary-content);
+    }
+
+    .btn-secondary {
+        --button-bg: var(--color-secondary);
+        --button-text: var(--color-secondary-content);
+    }
+
+    .btn-accent {
+        --button-bg: var(--color-accent);
+        --button-text: var(--color-accent-content);
+    }
+}

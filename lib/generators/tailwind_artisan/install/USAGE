@@ -1,0 +1,5 @@
+Description:
+    This generator will modify your application.tailwind.css file to include theme css variables
+
+Example:
+    bin/rails generate css_zero:install

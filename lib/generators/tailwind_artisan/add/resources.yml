@@ -1,0 +1,3 @@
+button:
+  - app/assets/stylesheets/components/button.css
+  - app/assets/images/loader-circle.svg
